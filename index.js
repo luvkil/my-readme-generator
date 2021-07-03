@@ -100,6 +100,13 @@ function userPrompt (){
             },
 
             {
+            type: "input",
+            name: "usage",
+            message: "What is this project usage for?"
+            },
+
+
+            {
               type: 'list',
               name: 'licence',
               message: 'what licence do you use',
@@ -168,10 +175,15 @@ function userPrompt (){
             },1000);
             }
             },
+
+            
+
+
+
             {
               type: "input",
-              name: "tests",
-              message: "Is there a test included?"
+              name: "questions",
+              message: "questions about application?"
             },
         
         

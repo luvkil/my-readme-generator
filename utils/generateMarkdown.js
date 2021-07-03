@@ -36,10 +36,11 @@ ${data.name}<br />
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+- [usage](#usage)
 - [licence](#licence)
 - [Contributors](#contributors)
 - [username](#username)
-- [test](#test)
+- [questions](#questions)
 
 
 ## Project Description: 
@@ -48,6 +49,9 @@ ${data.name}<br />
 
 ## installation
   ${data.installaton}<br />
+
+##usage
+${data.usage}
 
 ## licence
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
@@ -58,17 +62,16 @@ ${data.name}<br />
 
 
 ## test
-${data.test}<br />
+${data.questions}<br />
 
-## email
-  ${data.email}<br />
-
-## username
- ${data.username}<br />
-
-
-### Project GitHub Repo 
-Project Repo belongs to [${data.github}](http://github.com/luvkil${data.github})
+##Find me on GitHub:
+[${data.username}](https://github.com/${data.username})<br />
+<br />
+ ##Email me with any questions: 
+ ${answers.email}<br />
+ <br />
+##This README was generated with by:
+[README-generator](https://github.com/luvkil/my-readme-generator)
 
 ### License
 ${renderLicenseLink(data.licence)}
