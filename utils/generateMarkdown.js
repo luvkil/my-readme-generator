@@ -28,7 +28,7 @@ function generateMarkdown(data) {
 [$badge](https://img.shields.io/badge/license-${data.licence}-brightgreen)<br />
 
 
-##name 
+## name 
 ${data.name}<br />
 
 
