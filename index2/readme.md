@@ -16,7 +16,10 @@
   - [licence](#licence)
   - [contributors](#contributors)
   - [test](#test)
-    - [License](#license)
+  - [Find me on GitHub:](#find-me-on-github)
+  - [Email me with any questions:](#email-me-with-any-questions)
+  - [This README was generated with by:](#this-readme-was-generated-with-by)
+  - [License](#license)
 
 ## Project Description:
 
@@ -42,16 +45,16 @@ ${data.contributors}<br />
 
 ${data.questions}<br />
 
-##Find me on GitHub:
+## Find me on GitHub:
 [\${data.username}](https://github.com/${data.username})<br />
 <br />
-##Email me with any questions:
+## Email me with any questions:
 ${answers.email}<br />
 <br />
-##This README was generated with by:
+## This README was generated with by:
 [README-generator](https://github.com/luvkil/my-readme-generator)
 
-### License
+## License
 
 ${renderLicenseLink(data.licence)}
 

@@ -133,7 +133,16 @@ function userPrompt (){
               type: 'input',
               name: 'contributors',
               message: 'are there any contributors of this project',
-            }, 
+            },
+            
+            {
+              type: "input",
+              name: "test",
+              message: "is there any test for this application?",
+            },
+
+
+
             {
               type: 'input',
               name: 'email',
@@ -153,8 +162,8 @@ function userPrompt (){
               done(null, true);
             },1000);
             }
-        
             },
+
             {
               type: 'input',
               name: 'username',
@@ -177,38 +186,34 @@ function userPrompt (){
             },
 
             
+                ]
+            )
+            
+    };
+            
+
+
+    //use writeFileAsync as a promise
+
+            
+    const init = () => {
+        userPrompt()
+        .then((data) => {
+          console.log("***********")
+          console.log(data); // --> answers { 'name': 'steven', 'title': 'ReadmeGenerator'}
+          console.log("***********")
+          const readme = generateMarkdown(data)
+          writeFileAsync('readme.md', readme)
+        })
+        .then(() => console.log('Successfully wrote to index.html'))
+        .catch((err) => console.error(err));
+    };
+    
+    init();
 
 
 
-            {
-              type: "input",
-              name: "questions",
-              message: "questions about application?"
-            },
-        
-        
-            ]
-        )
-        
-};
 
-
-//use writeFileAsync as a promise
-
-
-const init = () => {
-    userPrompt()
-    .then((answers) => {
-      console.log("***********")
-      console.log(answers); // --> answers { 'name': 'steven', 'title': 'ReadmeGenerator'}
-      console.log("***********")
-      writeFileAsync('index.md', generateMarkdown(answers))
-    })
-    .then(() => console.log('Successfully wrote to index.html'))
-    .catch((err) => console.error(err));
-};
-
-init();
 
 
 

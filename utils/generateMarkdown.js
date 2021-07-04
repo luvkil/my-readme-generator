@@ -29,7 +29,8 @@ function generateMarkdown(data) {
 
 
 ## name 
-${data.name}<br />
+${data.name}
+<br>
 
 
 
@@ -44,34 +45,43 @@ ${data.name}<br />
 
 
 ## Project Description: 
-  ${data.description}<br />
+  ${data.description}
+  <br>
 
 
 ## installation
-  ${data.installaton}<br />
+  ${data.installaton}
+  <br>
 
 ##usage
 ${data.usage}
 
 ## licence
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
-<br />
+![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+<br>
 
 ## contributors
-  ${data.contributors}<br />
+  ${data.contributors}
+  <br>
 
 
 ## test
-${data.questions}<br />
+${data.test}<br />
 
-##Find me on GitHub:
-[${data.username}](https://github.com/${data.username})<br />
+#question<br />
+
+##Find me on GitHub, just click on link below:
+[Username](https://github.com/${data.username})<br />
 <br />
  ##Email me with any questions: 
- ${answers.email}<br />
+ ${data.email}<br />
  <br />
+
+
 ##This README was generated with by:
 [README-generator](https://github.com/luvkil/my-readme-generator)
+
+
 
 ### License
 ${renderLicenseLink(data.licence)}
