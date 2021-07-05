@@ -1,21 +1,21 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license == undefined) {
-    return '';
-  }
-  return 
-  
+if(license == undefined) {
+return '';
+}
+return
+
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license == undefined) {
-    return '';
-  }
+if(license == undefined) {
+return '';
+}
 
-  return `[${license}](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)`
+return `[${license}](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)`
 }
 
 // TODO: Create a function that returns the license section of README
@@ -24,73 +24,66 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# Project Title: ${data.title}<br />
+return `# Project Title: ${data.title}<br />
 [$badge](https://img.shields.io/badge/license-${data.licence}-brightgreen)<br />
 
+## name
 
-## name                                                    
-${data.name}
+\${data.name}
 <br>
 
-
-
 ## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [usage](#usage)
+
+- [name](#name)
+- [Table of Contents](#table-of-contents)
+- [Project Description:](#project-description)
+- [installation](#installation)
 - [licence](#licence)
-- [Contributors](#contributors)
+- [contributors](#contributors)
 - [test](#test)
-- [username](#username)
+  - [License](#license)
 
+## Project Description:
 
-
-## Project Description: 
-  ${data.description}
-  <br>
-
+\${data.description}
+<br>
 
 ## installation
-  ${data.installaton}
-  <br>
+
+\${data.installaton}
+<br>
 
 ##usage
-${data.usage}
+\${data.usage}
 
 ## licence
+
 ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
 <br>
 
 ## contributors
-  ${data.contributors}
-  <br>
 
+\${data.contributors}
+<br>
 
 ## test
-${data.test}<br />
+
+\${data.test}<br />
 
 #question<br />
 
 ##Find me on GitHub, just click on link below:
 [Username](https://github.com/${data.username})<br />
 <br />
- ##Email me with any questions: 
- ${data.email}<br />
- <br />
-
+##Email me with any questions:
+\${data.email}<br />
+<br />
 
 ##This README was generated with by:
 [README-generator](https://github.com/luvkil/my-readme-generator)
 
-
-
 ### License
-${renderLicenseLink(data.licence)}
+
+\${renderLicenseLink(data.licence)}
 
 `
-}
-
-
-
-
-module.exports = generateMarkdown;
