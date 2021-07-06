@@ -78,10 +78,10 @@ function userPrompt (){
             },
         
             {
-              type: 'input',
+              type: 'list',
               name: 'installaton',
               message: 'describe installation process if any?',
-              choice:['download','disc'],
+              choices:['download','disc'],
                validate: function (input) {
             // Declare function as asynchronous, and save the done callback
             var done = this.async();
@@ -110,7 +110,7 @@ function userPrompt (){
               type: 'list',
               name: 'licence',
               message: 'what licence do you use',
-              choices: ['MIT','apache licence','bsd licence','isc licence','bsd licence','ibm public licence'],
+              choices: ['MIT','apache','bsd','isc','bsd','ibm public'],
               validate: function (input) {
             // Declare function as asynchronous, and save the done callback
             var done = this.async();
